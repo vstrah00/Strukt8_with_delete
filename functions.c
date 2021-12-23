@@ -193,16 +193,15 @@ int Pop(positionQ head){
     return 0;
 }
 
-int freeTree(Position root){
+Position freeTree(Position root){
     if(root!=NULL){
         if(root->left!=NULL){
-            freeTree(root->left);
+            root->left=freeTree(root->left);
         }
         if(root->right!=NULL){
-            freeTree(root->right);
+            root->right=freeTree(root->right);
         }
-        free(root);
     }
-
-    return 0;
+    free(root);
+    return NULL;
 }
