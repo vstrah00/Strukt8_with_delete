@@ -29,6 +29,6 @@ int InOrderPrint(Position root);
 int PreOrderPrint(Position root);
 int PostOrderPrint(Position root);
 int LevelOrderPrint(Position root);
-int freeTree(Position root);
+Position freeTree(Position root);
 
 #endif
