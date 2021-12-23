@@ -47,8 +47,9 @@ int main(){
                 root=deleteCvor(root, selected);
                 break;
             case 7:
-                freeTree(root);
-                return 0;          
+                root=freeTree(root);
+                return 0;
+                break;
             default:
                 printf("Wrong input!");
         }
